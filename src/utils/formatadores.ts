@@ -7,6 +7,7 @@ export function formatarMoeda(valor: number): string {
 }
 
 export function formatarData(data: Date,formato: FormatoData = FormatoData.PADRAO): string {
+    
     if(formato === FormatoData.DIA_SEMANA_DIA_MES_ANO ){
         return data.toLocaleDateString("pt-br", {
             weekday: "long",
